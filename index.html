@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OMG — Oh My Glow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">✕</button>
+        <a href="#home">Home</a>
+        <a href="#products">Produk</a>
+        <a href="#about">About</a>
+        <a href="#categories">Kategori</a>
+        <a href="#reviews">Reviews</a>
+    </div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <a href="#" class="nav-logo">OMG<span>Oh My Glow</span></a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Produk</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#categories">Kategori</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="theme-icon">☀</span>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                New Collection 2025
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line italic">Oh My</span>
+                <span class="title-line bold">Glow.</span>
+            </h1>
+            <p class="hero-sub">Makeup & skincare premium yang merayakan kecantikan aslimu — dari bold look hingga dewy
+                glow yang tahan seharian.</p>
+            <div class="hero-pills">
+                <span class="pill">✦ Cruelty Free</span>
+                <span class="pill">✦ Halal Certified</span>
+                <span class="pill">✦ Dermatested</span>
+            </div>
+            <div class="hero-actions">
+                <a href="#products" class="btn-primary">Explore Collection</a>
+                <a href="#categories" class="btn-ghost">Lihat Kategori <span class="arrow">→</span></a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-img-wrap">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&q=80&auto=format&fit=crop"
+                    alt="OMG Hero Product" class="hero-img" />
+                <div class="hero-img-glow"></div>
+            </div>
+            <div class="hero-float-tag tag-top">
+                <span class="tag-label">Bestseller</span>
+                <span class="tag-val">★ 4.9</span>
+            </div>
+            <div class="hero-float-tag tag-bottom">
+                <span class="tag-label">Glow Serum</span>
+                <span class="tag-val">Rp 89K</span>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+        <div class="marquee-track">
+            <div class="marquee-item"><span class="dot">✦</span> Oh My Glow</div>
+            <div class="marquee-item"><span class="dot">✦</span> Cruelty Free</div>
+            <div class="marquee-item"><span class="dot">✦</span> Halal Certified</div>
+            <div class="marquee-item"><span class="dot">✦</span> Premium Quality</div>
+            <div class="marquee-item"><span class="dot">✦</span> Dermatologically Tested</div>
+            <div class="marquee-item"><span class="dot">✦</span> Free Ongkir Se-Indonesia</div>
+            <div class="marquee-item"><span class="dot">✦</span> Made in Indonesia</div>
+            <div class="marquee-item"><span class="dot">✦</span> Oh My Glow</div>
+            <div class="marquee-item"><span class="dot">✦</span> Cruelty Free</div>
+            <div class="marquee-item"><span class="dot">✦</span> Halal Certified</div>
+            <div class="marquee-item"><span class="dot">✦</span> Premium Quality</div>
+            <div class="marquee-item"><span class="dot">✦</span> Dermatologically Tested</div>
+            <div class="marquee-item"><span class="dot">✦</span> Free Ongkir Se-Indonesia</div>
+            <div class="marquee-item"><span class="dot">✦</span> Made in Indonesia</div>
+        </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <section class="products-section" id="products">
+        <div class="section-header reveal">
+            <div class="section-label">Koleksi Unggulan</div>
+            <h2 class="section-title">Featured <em>Products</em></h2>
+            <p class="section-sub">Diformulasikan khusus untuk kulit tropis Indonesia</p>
+        </div>
+
+        <!-- SKINCARE ROW -->
+        <div class="category-row reveal">
+            <div class="cat-row-label">
+                <span class="cat-tag">🌿 Skincare</span>
+            </div>
+            <div class="products-grid">
+
+                <div class="product-card reveal">
+                    <div class="card-badge">Bestseller</div>
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&q=80&auto=format&fit=crop"
+                            alt="Glow Serum" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Skincare · Serum</div>
+                        <div class="card-name">Glow Serum 30ml</div>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 89.000</span>
+                            <span class="card-rating">★★★★★ <em>4.9</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal reveal-delay-1">
+                    <div class="card-badge new">New</div>
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&q=80&auto=format&fit=crop"
+                            alt="Hydra Cream" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Skincare · Moisturizer</div>
+                        <div class="card-name">Hydra Glow Cream</div>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 75.000</span>
+                            <span class="card-rating">★★★★★ <em>4.9</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal reveal-delay-2">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&q=80&auto=format&fit=crop"
+                            alt="Face Toner" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Skincare · Toner</div>
+                        <div class="card-name">Glow Toner BHA</div>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 65.000</span>
+                            <span class="card-rating">★★★★☆ <em>4.7</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal reveal-delay-3">
+                    <div class="card-badge">Fave</div>
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&q=80&auto=format&fit=crop"
+                            alt="Sheet Mask" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Skincare · Mask</div>
+                        <div class="card-name">Sheet Mask Glow</div>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 38.000</span>
+                            <span class="card-rating">★★★★★ <em>4.8</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal reveal-delay-1">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400&q=80&auto=format&fit=crop"
+                            alt="Eye Cream" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Skincare · Eye Care</div>
+                        <div class="card-name">Bright Eye Cream</div>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 95.000</span>
+                            <span class="card-rating">★★★★★ <em>4.8</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal reveal-delay-2">
+                    <div class="card-badge new">New</div>
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1567721913486-6585f069b019?w=400&q=80&auto=format&fit=crop"
+                            alt="SPF Sunscreen" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Skincare · Sun Protection</div>
+                        <div class="card-name">Dewy SPF 50+ PA++++</div>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 110.000</span>
+                            <span class="card-rating">★★★★★ <em>5.0</em></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- MAKEUP ROW -->
+        <div class="category-row reveal">
+            <div class="cat-row-label">
+                <span class="cat-tag">💄 Makeup</span>
+            </div>
+            <div class="products-grid">
+
+                <div class="product-card reveal">
+                    <div class="card-badge">Bestseller</div>
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1583241800698-e8ab01830a63?w=400&q=80&auto=format&fit=crop"
+                            alt="Lip Gloss" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Makeup · Lip</div>
+                        <div class="card-name">Velvet Lip Gloss</div>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 55.000</span>
+                            <span class="card-rating">★★★★★ <em>4.8</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal reveal-delay-1">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&q=80&auto=format&fit=crop"
+                            alt="Dewy Cushion" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Makeup · Base</div>
+                        <div class="card-name">Dewy Cushion 15g</div>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 120.000</span>
+                            <span class="card-rating">★★★★☆ <em>4.7</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal reveal-delay-2">
+                    <div class="card-badge new">New</div>
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1631214524020-3c69fcf05326?w=400&q=80&auto=format&fit=crop"
+                            alt="Blush On" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Makeup · Cheek</div>
+                        <div class="card-name">Rose Blush Duo</div>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 88.000</span>
+                            <span class="card-rating">★★★★★ <em>4.9</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal reveal-delay-3">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400&q=80&auto=format&fit=crop"
+                            alt="Mascara" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Makeup · Eye</div>
+                        <div class="card-name">Lash Lift Mascara</div>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 72.000</span>
+                            <span class="card-rating">★★★★★ <em>4.8</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal reveal-delay-1">
+                    <div class="card-badge">Viral</div>
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&q=80&auto=format&fit=crop"
+                            alt="Highlighter" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Makeup · Highlight</div>
+                        <div class="card-name">Glass Skin Highlighter</div>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 98.000</span>
+                            <span class="card-rating">★★★★★ <em>5.0</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card reveal reveal-delay-2">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&q=80&auto=format&fit=crop"
+                            alt="Setting Spray" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Makeup · Setting</div>
+                        <div class="card-name">Dewy Fix Spray</div>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 68.000</span>
+                            <span class="card-rating">★★★★☆ <em>4.6</em></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BUNDLE ROW -->
+        <div class="category-row reveal">
+            <div class="cat-row-label">
+                <span class="cat-tag">✨ Bundle</span>
+            </div>
+            <div class="products-grid products-grid--wide">
+
+                <div class="product-card product-card--wide reveal">
+                    <div class="card-badge sale">Sale 30%</div>
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=600&q=80&auto=format&fit=crop"
+                            alt="Starter Kit" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Bundle · Starter Kit</div>
+                        <div class="card-name">OMG Starter Glow Kit</div>
+                        <p class="card-desc">Serum + Moisturizer + Toner — paket lengkap buat kulitmu glowing dari
+                            dalam.</p>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 199.000 <s>Rp 284.000</s></span>
+                            <span class="card-rating">★★★★★ <em>4.9</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card product-card--wide reveal reveal-delay-2">
+                    <div class="card-badge sale">Sale 25%</div>
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1576426863848-c21f53c60b19?w=600&q=80&auto=format&fit=crop"
+                            alt="Makeup Bundle" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Bundle · Makeup Full Set</div>
+                        <div class="card-name">OMG Full Glam Kit</div>
+                        <p class="card-desc">Cushion + Lip Gloss + Blush + Mascara — tampil bold dari pagi sampai malam.
+                        </p>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 279.000 <s>Rp 373.000</s></span>
+                            <span class="card-rating">★★★★★ <em>4.8</em></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card product-card--wide reveal reveal-delay-4">
+                    <div class="card-badge sale">Sale 20%</div>
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=600&q=80&auto=format&fit=crop"
+                            alt="Mini Bundle" loading="lazy" />
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-cat">Bundle · Mini Set</div>
+                        <div class="card-name">OMG Mini Glow Set</div>
+                        <p class="card-desc">Sheet Mask 5pcs + Eye Cream + SPF — cocok buat hadiah atau first-timer.</p>
+                        <div class="card-meta">
+                            <span class="card-price">Rp 149.000 <s>Rp 186.000</s></span>
+                            <span class="card-rating">★★★★★ <em>5.0</em></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ABOUT / BRAND STORY -->
+    <section class="about-section" id="about">
+        <div class="about-inner">
+            <div class="about-visual reveal">
+                <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&q=80&auto=format&fit=crop"
+                    alt="About OMG" />
+                <div class="about-tag">
+                    <span class="about-num">2019</span>
+                    <span class="about-label">Est. Jakarta</span>
+                </div>
+            </div>
+            <div class="about-content reveal reveal-delay-2">
+                <div class="section-label">Brand Story</div>
+                <h2 class="section-title">Born from <em>Real Skin,</em><br>Real Stories.</h2>
+                <p class="about-desc">OMG lahir dari satu keyakinan: setiap perempuan Indonesia layak punya produk
+                    kecantikan premium yang benar-benar bekerja untuk kulitnya — kulit tropis, kulit coklat, kulit
+                    berminyak, kulit sensitif.</p>
+                <p class="about-desc">Kami tidak percaya one-size-fits-all. Setiap formula dirancang khusus bersama
+                    dermatologis lokal, menggunakan bahan aktif pilihan yang aman dan efektif.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-num">200K+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">97%</span>
+                        <span class="stat-label">Reorder Rate</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">55+</span>
+                        <span class="stat-label">SKU Produk</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES SHOWCASE -->
+    <section class="categories-section" id="categories">
+        <div class="reveal">
+            <div class="section-label">Jelajahi</div>
+            <h2 class="section-title">Shop by <em>Category</em></h2>
+        </div>
+        <div class="cat-grid">
+            <div class="cat-card reveal">
+                <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=700&q=80&auto=format&fit=crop"
+                    alt="Makeup" />
+                <div class="cat-overlay-content">
+                    <span class="cat-emoji">💄</span>
+                    <h3 class="cat-name">Makeup</h3>
+                    <p class="cat-count">24 produk</p>
+                </div>
+            </div>
+            <div class="cat-card reveal reveal-delay-1">
+                <img src="https://images.unsplash.com/photo-1617897903246-719242758050?w=700&q=80&auto=format&fit=crop"
+                    alt="Skincare" />
+                <div class="cat-overlay-content">
+                    <span class="cat-emoji">🌿</span>
+                    <h3 class="cat-name">Skincare</h3>
+                    <p class="cat-count">31 produk</p>
+                </div>
+            </div>
+            <div class="cat-card reveal reveal-delay-2">
+                <img src="https://images.unsplash.com/photo-1576426863848-c21f53c60b19?w=700&q=80&auto=format&fit=crop"
+                    alt="Bundle" />
+                <div class="cat-overlay-content">
+                    <span class="cat-emoji">✨</span>
+                    <h3 class="cat-name">Paket Bundle</h3>
+                    <p class="cat-count">8 paket</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews-section" id="reviews">
+        <div class="reveal">
+            <div class="section-label">Apa Kata Mereka</div>
+            <h2 class="section-title">Real <em>Reviews,</em><br>Real Glow.</h2>
+        </div>
+        <div class="reviews-grid">
+
+            <div class="review-card reveal">
+                <div class="review-product-tag">Glow Serum</div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Kulitku berubah banget dalam 2 minggu pakai Glow Serum-nya OMG. Cerah, lembap,
+                    dan nggak bikin bruntusan sama sekali. Udah reorder 3x!"</p>
+                <div class="review-author">
+                    <div class="review-avatar" style="--av-color: #c9a96e">R</div>
+                    <div>
+                        <div class="review-name">Rania K.</div>
+                        <div class="review-handle">@rania.glows · Jakarta</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card reveal reveal-delay-1">
+                <div class="review-product-tag">Dewy Cushion</div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Cushion-nya ringan banget di kulit, nggak cakey, dan tahan seharian meski cuaca
+                    panas. Shade-nya juga cocok banget sama undertone aku yang warm."</p>
+                <div class="review-author">
+                    <div class="review-avatar" style="--av-color: #d4847a">A</div>
+                    <div>
+                        <div class="review-name">Aisha M.</div>
+                        <div class="review-handle">@aisha.beauty · Surabaya</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card reveal reveal-delay-2">
+                <div class="review-product-tag">Velvet Lip Gloss</div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Nggak nyangka lip gloss harga segini kualitasnya kayak gini. Warnanya pigmented,
+                    nggak lengket, dan wanginya yummy banget. Favorit aku!"</p>
+                <div class="review-author">
+                    <div class="review-avatar" style="--av-color: #9b7ea0">S</div>
+                    <div>
+                        <div class="review-name">Salwa D.</div>
+                        <div class="review-handle">@salwa.daily · Bandung</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card reveal reveal-delay-3">
+                <div class="review-product-tag">Dewy SPF</div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"SPF-nya enak banget dipake, nggak bikin kulit putih kayak bedak, langsung nyerap
+                    dan kulit jadi kelihatan glassy. Game changer banget!"</p>
+                <div class="review-author">
+                    <div class="review-avatar" style="--av-color: #7aa0c9">N</div>
+                    <div>
+                        <div class="review-name">Nadia F.</div>
+                        <div class="review-handle">@nadiaskin · Yogyakarta</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card reveal reveal-delay-1">
+                <div class="review-product-tag">Starter Kit</div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Beli bundle starter kit sebagai hadiah ulang tahun teman, dia langsung jatuh
+                    cinta. Sekarang udah beli sendiri 2 kali. Packaging-nya juga cantik banget!"</p>
+                <div class="review-author">
+                    <div class="review-avatar" style="--av-color: #c9a96e">D</div>
+                    <div>
+                        <div class="review-name">Dea P.</div>
+                        <div class="review-handle">@dea.prettyglow · Medan</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card reveal reveal-delay-2">
+                <div class="review-product-tag">Sheet Mask</div>
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Sheet mask-nya langsung berasa bedanya setelah pertama kali pakai. Kulit jadi
+                    super lembap dan kenyal. Cocok banget sebelum makeup!"</p>
+                <div class="review-author">
+                    <div class="review-avatar" style="--av-color: #a0c99b">M</div>
+                    <div>
+                        <div class="review-name">Maya R.</div>
+                        <div class="review-handle">@mayaradika · Bali</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#" class="nav-logo">OMG<span>Oh My Glow</span></a>
+                <p class="footer-desc">Brand kecantikan lokal premium yang merayakan kecantikan asli perempuan Indonesia
+                    — dari skincare hingga makeup yang bold, dewy, dan glowing.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+                    <a href="#" class="social-btn" aria-label="TikTok">TK</a>
+                    <a href="#" class="social-btn" aria-label="YouTube">YT</a>
+                    <a href="#" class="social-btn" aria-label="Shopee">SP</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-title">Produk</div>
+                <ul class="footer-links">
+                    <li><a href="#">Makeup</a></li>
+                    <li><a href="#">Skincare</a></li>
+                    <li><a href="#">Paket Bundle</a></li>
+                    <li><a href="#">Bestseller</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-title">Info</div>
+                <ul class="footer-links">
+                    <li><a href="#">Tentang OMG</a></li>
+                    <li><a href="#">Blog Kecantikan</a></li>
+                    <li><a href="#">Tutorial</a></li>
+                    <li><a href="#">Shade Finder</a></li>
+                    <li><a href="#">Affiliate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-title">Bantuan</div>
+                <ul class="footer-links">
+                    <li><a href="#">Cara Order</a></li>
+                    <li><a href="#">Pengiriman</a></li>
+                    <li><a href="#">Return & Refund</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">© 2025 OMG — Oh My Glow. All rights reserved.</div>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
